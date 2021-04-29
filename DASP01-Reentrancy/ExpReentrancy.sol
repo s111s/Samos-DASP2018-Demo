@@ -7,7 +7,7 @@ interface IReentrancy {
 pragma solidity ^0.6.0;
 
 contract ExpReentrancy {
-    IReentrancy vulnTarget = IReentrancy(0x0); // setup target contract with target interface, replace 0x0 with target contract address
+    IReentrancy vulnTarget = IReentrancy(0x0000000000000000000000000000000000000000); // setup target contract with target interface, replace 0x0 with target contract address
     uint baseAmount = 1 ether; // set the base amount per use
     
     function getTargetBalance() public view returns (uint) {

@@ -9,7 +9,7 @@ interface IAuth {
 }
 
 contract CheckAuth {
-    IAuth authPointer = IAuth(0x5e17b14ADd6c386305A32928F985b29bbA34Eff5); // put Auth conrtact address here
+    IAuth authPointer = IAuth(0x0000000000000000000000000000000000000000); // replace Auth conrtact address here
     
     function checkCallerByTX() public view returns (address) {
         return authPointer.getCallerByTX();
